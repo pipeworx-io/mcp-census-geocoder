@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/census-geocoder",
   "title": "Census Geocoder",
   "description": "US Census Bureau Geocoder MCP",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/census-geocoder",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-census-geocoder",

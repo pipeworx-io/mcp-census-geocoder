@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-census-geocoder",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "US Census Bureau Geocoder MCP",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-763ad8da00b3ccb7be3acfaa652f8299cf5c0756d520ff92019842189c980644",
-    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
+    "sourceHash": "v1-7e9af8a7d21101cd13d0b46a75c9c154ce522efa5e92745987254c690f43bea9",
+    "sourceCommit": "babdd280d475dceddecc9ebf8f2a661712781a81"
   }
 }
