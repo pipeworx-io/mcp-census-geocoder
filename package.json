@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-census-geocoder",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "US Census Bureau Geocoder MCP",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-census-geocoder": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "census-geocoder"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-census-geocoder.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/census-geocoder",
   "pipeworx": {
-    "sourceHash": "v1-3ed347b3ab9433055d8d3a03b3c1e08de24aa1f88f50d6e6f714abee38b38c56",
-    "sourceCommit": "70a4e816a9195016cd4af92dca2019485d4c3865"
+    "mode": "gateway",
+    "slug": "census-geocoder",
+    "gatewaySlug": "census-geocoder",
+    "sourceHash": "v1-25f94c4759e848359f631bc5d79d2534c0f25b9c4ce080b60050e94b15059941",
+    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
   }
 }
